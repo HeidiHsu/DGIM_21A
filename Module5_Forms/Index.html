@@ -50,7 +50,7 @@
     Search:
     <br />
         <input type="search" name="search" placeholder="Find more info here" />
-    <button>Submit</button>
+    <button> Submit </button>
     <!-- <input type="Submit" name="search" /> book example -->
 </form></p>
 
@@ -111,7 +111,7 @@ As you browse the internet, which kind of computer OS are you using?<br />
 <p><form action="http://www.example.org/upload.php" method="post">
     <p>Upload your own photo: <br />
     <input type="file" name="user-photo" /><br />
-    <input type="submit" value="Upload" />
+    <input type="file" value="upload" />
 <!-- <button>Submit</button> -->
 </form></p>
  
@@ -125,16 +125,19 @@ As you browse the internet, which kind of computer OS are you using?<br />
         <label>Last Name:<br />
             <input type="text" name="lastname" /></label><br />
         <label>Email:<br />
-                <input type="text" name="email" /></label>
+                <input type="email" name="contact_email" /></label><br />
+                <br />
+        <button>Submit</button>
     </fieldset>
+    
 </p> 
  
 <h3>Schedule a date to visit the campus!</h3> 
 <!--  use the exact code found on page 166 -->
 <p><form action="http://www.example.org/booking/" method="post">
     <label for="username">Date: </label> 
-    <input type="date" name="visit" />
-    <input type="submit" value="Submit" />
+    <input type="datetime-local" name="visit" />
+    <input type="submit" value="Let's Meet Up" />
 </form></p>
 
 <br />
