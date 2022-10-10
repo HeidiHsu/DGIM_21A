@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module6 Extra Markup</title>
+</head>
+<body>
+
+<!-- wrap this in a div and add style="border: 2px solid purple;" in the opening Div tag ...  START DIV HERE-->
+<div style="border: 2px solid purple; padding: 1em;">
+
+<h1>Hi, Welcome to WVC</h1>
+<p>Log in first to get the best use out of this site: </p>
+
+<!-- use the <input> tag as seen on page 153 to get it going, then be sure to use the "placeholder" attribute as seen on page 168-->  
+<form action="http://www.example.com/login.php">
+<p>Username:
+    <input type="email" name="username" required="" placeholder="user name" size="15" maxlength="30" />
+    </p>
+
+<!-- use form validation as seen on page 165 --> 
+<p>Password:
+    <input type="password" name="password" required="required" size="15" maxlength="30" />
+    </p>
+
+<!-- add a <button>  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>--> 
+<p><button>Submit</button></p>
+</form>
+<!-- Close Div tag HERE--></div>
+<br />
+
+<p>After you've logged in, <a href="video.html">CLICK HERE</a> to watch a video or listen to some music!
+<!-- your CLICK HERE should take the user to the video.html page - make sure they can get back! -->
+</p>
+<br/>
+
+<!-- inside the img tag, add a border like this <img style="border: 2px solid orange;>"-->
+<!-- insert image of a generic college using the <img> tag as done in previous assignment  - grab image from “unsplash” (be sure to create your "images" folder in the root directory of your assignment's folder) and resize the image using height=”600” width=”450”  basically use exact code found on page 100 --> 
+<img style="border: 2px solid orange; padding: 1em;" src="images/school-unsplash.jpg" alt="The main building of Bucerius Law School in Hamburg, Germany." width="600" height="450" />
+<br/>
+<br/>
+
+<!-- wrap this below in a div and add style="border: 2px solid green;" in the opening Div tag ...  START -->
+<div style="border: 2px solid green; padding: 1em;">
+<h2>About the school</h2>
+
+<p>We are the best at what we do! From the arts to the sciences, we've got you covered. Here you will find all the information you need:</p>
+<ul>
+    <li><a href="https://www.westvalley.edu/classes/offerings.html" target="_blank">Course list</a></li>
+    <li><a href="https://www.westvalley.edu/admissions/apply.html" target="_blank">How to sign up for classes</a></li>
+    <li><a href="https://www.westvalley.edu/services/" target="_blank">Resource centers</a></li>
+    <li><a href="https://www.westvalley.edu/faculty/" target="_blank">Faculty list</a></li>
+    <li><a href="https://www.westvalley.edu/maps/_files/pdf/wvc-campus-map.pdf" target="_blank">Campus map</a></li>
+</ul>
+ <!-- Close Div tag--></div>
+
+<!-- add an iframe tag here - you can use exact code from page 189-->
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2150.0902371341344!2d-122.01136630921836!3d37.26408776791361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4a96742ee933%3A0xdde18e9972ad1dfb!2sWest%20Valley%20College!5e0!3m2!1sen!2sus!4v1665369704300!5m2!1sen!2sus" width="600" height="450" style="border:2px solid black"></iframe>
+</p>
+
+
+<!-- wrap this below in a div and add style="border: 2px solid pink;" in the opening Div tag ...  START -->
+<div style="border:2px solid pink; padding: 1em;">
+<h2>Still need more information? No worries! Feel free to use our search bar below!</h2> 
+
+<!-- insert search bar – as seen on page 168, you can use exact code --> 
+<!--  insert button  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>--> 
+<p><form action="http://www.example.org/search.php">
+    Search:
+    <br />
+        <input type="search" name="search" placeholder="Find more info here" />
+    <button> Submit </button>
+    <!-- <input type="Submit" name="search" /> book example -->
+</form></p>
+ <!-- Close Div tag--></div>
+<br />
+
+<!-- wrap this below in a div and add style="border: 2px solid red;" in the opening Div tag ...  START -->
+<div style="border: 2px solid red; padding: 1em;"> 
+<h2>Join our Mailing list!</h2> 
+
+<p>If you join our mailing list, you will get exclusive information regarding upcoming events, assignments, and well... more events! Be the first to be “in the know”.  We promise not to spam you. <strong>Really!</strong></p> <!-- emphasize “really” --> 
+
+<!-- insert mailing list – use exact code on page 167, found within the top two boxes – instead of using <input type=”submit”> for a button, please use the actual <button> tag for the next part below -->     
+<!-- insert <button> tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>  --> 
+<p><form action="http://www.example.org/subscribe.php">
+   Please enter your email address:
+    <br />
+        <Input type="email" name="email" placeholder="your email here" />
+    <button>Submit</button>
+    <!-- <input type="Submit" value="Submit"  book example-->
+</form></p>
+<!-- Close Div tag--></div>
+<br />
+
+
+<!-- wrap this below in a div and add style="border: 2px solid blue;" in the opening Div tag ...  START -->
+<div style="border: 2px solid blue; padding: 1em;">
+<h3>What kind of music applications do you like using while studying or on the go?</h3>
+<!--  insert a “checkbox”  which looks like this:   <input type=”checkbox”>  You can use the exact example/code  on page 156 in your book  --> 
+<p><form action="http://www.example.org/Profile.php">
+    You can choose more than one music streaming applications:
+    <br />
+        <input type="checkbox" name="service" value="Spotify" checked="checked" /> Spotify
+        <input type="checkbox" name="service" value="Apple_Music" /> Apple Music
+        <input type="checkbox" name="service" value="Amazon_Music" /> Amazon Music
+        <input type="checkbox" name="service" value="Deezer" /> Deezer
+        <input type="checkbox" name="service" value="Tidal" /> Tidal
+</form></p>
+<!-- Close Div tag--></div>
+<br />
+
+
+<!-- wrap this below in a div and add style="border: 2px solid black;" in the opening Div tag ...  START -->
+<div style="border: 2px solid black; padding: 1em">
+<!--  use the radio buttons, exactly as it is written on page 155--> 
+<p><form action="http://www.example.org/Profile.php">
+    Favorite style of music?
+    <br /> 
+        <input type="radio" name="genre" value="Rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="Pop" /> Pop
+        <input type="radio" name="genre" value="Jazz" /> Jazz
+</form></p>
+<!-- Close Div tag--></div>
+<br />
+
+
+<!-- wrap this below in a div and add style="border: 2px solid orange;" in the opening Div tag ...  START -->
+<div style="border: 2px solid orange; padding: 1em">
+<!--  insert a Drop Down List Box - you can use the exact code on page 157, just change the working from ipad, radio, computer to “Windows, MacOS, Linux” --> 
+<h3>Are you a MacOS, Windows, or Linux user?</h3> 
+
+<p><form action="http://www.example.org/Profile.php">
+As you browse the internet, which kind of computer OS are you using?<br />  
+<select name="devices">
+    <Option value="MacOS">MacOS</Option>
+    <Option value="Windows">Windows</Option>
+    <Option value="Linux">Linux</Option>
+</select>
+</form></p>
+<!-- Close Div tag--></div>
+<br/>
+
+
+<!-- wrap this below in a div and add style="border: 2px solid purple;" in the opening Div tag ...  START -->
+<div style="border: 2px solid purple; padding: 1em">
+<h3>Add an image for your profile!</h3> 
+<!--  insert image of self or  if you don't want to use a picture of yourself, use a generic image of a college student from “unsplash” and resize the image using height=”600” width=”600”  use similar code found on page 100--> 
+<img src="images/frog_small.jpg" alt="a frog" height="600" width="600" />
+
+<!--  add file input box – same code on page 159 works--> 
+<p><form action="http://www.example.org/upload.php" method="post">
+    <p>Upload your own photo: <br />
+    <input type="file" name="user-photo" /><br />
+    <!-- <input type="file" value="upload" /> -->
+<button>Submit</button>
+</form></p>
+<!-- Close Div tag--></div>
+<br />
+ 
+
+<h3>What is your contact info?</h3>
+<!-- use the exact code from page 164 in your book – make sure to change the 3 titles to “First Name” “Last Name” and “Email” --> 
+<p>
+    <fieldset>
+        <legend> Please use the form below: </legend>
+        <label>First Name:<br />
+            <input type="text" name="firstname" /></label><br />
+        <label>Last Name:<br />
+            <input type="text" name="lastname" /></label><br />
+        <label>Email:<br />
+                <input type="email" name="contact_email" /></label><br />
+                <br />
+        <button>Submit</button>
+    </fieldset>
+    
+</p> 
+ 
+<h3>Schedule a date to visit the campus!</h3> 
+<!--  use the exact code found on page 166 -->
+<p><form action="http://www.example.org/booking/" method="post">
+    <label for="username">Date: </label> 
+    <input type="datetime-local" name="visit" />
+    <input type="submit" value="Let's Meet Up" />
+</form></p>
+
+<br />
+<br />
+
+</body>
+</html>
