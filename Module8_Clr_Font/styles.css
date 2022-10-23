@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap');
+
+html {
+    font-family: Kanit;
+    font-weight: 400; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: georgian;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color:green;
+}
+
+h2 {
+    font-weight:600;
+    color:cadetblue;
+    text-shadow: 2px 2px 4px hsla(0, 15%, 72%, 0.63);
+}
+
+h2.email {
+    font-weight:200;
+    color:chocolate
+}
+
+a:link {
+color:blue;
+}
+
+a:visited {
+color:darkorchid;
+font-weight: 400;
+}
+
+a:hover {
+    font-size: 20px;
+    transition-duration: 1s;
+    background-color: lightcyan;
+}
+
+a:focus {
+    border: 2px;
+    border-color: burlywood;
+    border-style: dotted;
+    background-color: antiquewhite;
+}
+
+a:active {
+    color:mediumpurple;
+}
+
+p.about1 {
+    background-color: yellowgreen;
+    text-color: brown;
+    text-shadow: 2px 2px 4px #000;
+}
+
+p.about2 {
+    background-color: rgb(7, 54, 135);
+    color: rgba(225, 224, 196, 0.829);
+}
