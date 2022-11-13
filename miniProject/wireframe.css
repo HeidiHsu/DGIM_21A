@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+*, header, footer, .div1, .div2, .div3, .div4 {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1%;
+
+}
+
+header, footer {
+    font-weight: 700;
+    text-align: left;
+    border:1px solid #243116;
+    float: left;
+    height: 300px;
+    width: 100%;
+    padding: 1%;
+}
+
+header {
+    background: #3F5426;
+    color: #93987C;
+}
+
+footer {
+    background: #bc6c25;
+    color:#EECE9F;    
+}
+
+/* menu */
+.div1 {
+    float: left;
+    height: 500px;
+    width: 15%; 
+    border: 1px solid black;
+    background: #5e674a;
+    color: #DDA15E;
+    text-align: center;
+    font-size: 80%;
+}
+
+/* Submenu */
+.div2 {
+    float: left;
+    height: 500px;
+    width: 15%; 
+    border: 1px solid #243116;
+    background: #93987C;
+    color: black;
+    font-size: 60%;
+    padding-top: 1.5%;
+}
+
+/* Info */
+.div3 {
+    float: left;
+    height: 500px;
+    width: 50%;
+    border: 1px solid #5F3B1C;
+    background: #EECE9F;
+    color: black;
+    font-size: 50%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+/* More Info */
+.div4 {
+    float: left;
+    height: 500px;
+    width: 20%;
+    border: 1px solid #5F3B1C;
+    background: #DDA15E;
+    color: #243116;
+    font-size: 50%;
+    text-align:justify;
+    padding-top: 2%;
+}
+
+
+/* ------------ iPad/TABLET -------------- */
+@media (min-width: 581px) and (max-width: 868px) {
+    *, header, footer, .div1, .div2, .div3, .div4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        height: 400px;
+
+    }
+
+    header, footer {
+        text-align: center;
+        height: 5rem;
+        }
+
+    header {
+        background: #292A30;
+        color: #9c9ca5;
+    }
+
+    footer {
+        background: #316119;
+        color:#DDA15E;    
+    }
+
+    /* menu */
+    .div1 {
+        width: 20%;
+        background: #454955;
+        color: #9f9f9f;
+        font-size: 70%;
+    }
+
+    /* Submenu */
+    .div2 {
+        width: 20%; 
+        background: #454945;
+        color: #9f9f9f;
+        font-size: 50%;
+    }
+
+    /* Info */
+    .div3 {
+        width: 60%;
+        background: #b3d089;
+        color: #0d0a0b;
+        font-size: 50%;
+    }
+
+    /* More Info */
+    .div4 {
+        float: left;
+        height: 60%;
+        width: 100%;
+        background: #729951;
+        color: #243116;
+        border: none;
+        font-size: 50%;
+    }
+}
+
+
+/* ------------ MOBILE -------------- */
+@media (max-width: 580px) {
+    *, header, footer, .div1, .div2, .div3, .div4 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        height: 300px;
+        color:#243116;
+        text-align: left;
+
+    }
+
+    header {
+        height: 4rem;
+        background: #a8b090;
+    }
+
+    footer {
+        height: 3rem;
+        background: #d4a373;
+    }
+
+    /* menu */
+    .div1 {
+        width: 40%; 
+        background: #c9cfad;
+        font-size: 70%;
+    }
+
+    /* Submenu */
+    .div2 {
+        width: 60%; 
+        background: #e9edc9;
+        font-size: 70%;
+    }
+
+    /* Info */
+    .div3 {
+        height: 60%;
+        width: 100%;
+        background: #fcf4d7;
+        font-size: 70%;
+    }
+
+    /* More Info */
+    .div4 {
+        height: 40%;
+        width: 100%;
+        background: #faedcd;
+        font-size: 70%;
+    }
+}
