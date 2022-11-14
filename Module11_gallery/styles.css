@@ -1,0 +1,102 @@
++@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: url('images/Mid-Mountain.jpg') no-repeat scroll top center;
+    background-size:cover;
+
+}
+
+h1 {
+    text-align: center;
+    color:antiquewhite;
+    margin-bottom: 60px;
+}
+
+.sum {
+    width: 50%;
+    margin: 0 auto 4%;
+    border: 4px solid rgba(127, 127, 230, 0.6);
+    border-radius: 6px;
+    background-color: rgba(12, 12, 124 , 0.40);
+    padding: 2%;
+}
+
+p {
+    font-size: 40%;
+    color: rgb(202, 211, 83);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.div1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 2% 0 2%;
+}
+
+img {
+    border: 1px solid pink;
+    width: 28%;
+    margin: 0 auto 4%;
+    box-shadow: 2px 2px 4px paleturquoise;
+
+}
+
+.div2 {
+    display: inline;
+    align-items: space-evenly;
+}
+
+.imglink {
+    border: 1px solid pink;
+    width: 28%;
+    margin: auto;
+    margin-left: 2%;
+    box-shadow: 2px 2px 4px paleturquoise;
+}
+
+a:hover {
+    opacity: .50;
+}
+
+/* ------ Tablet/iPads -------- */
+@media (min-width: 581px) and (max-width: 868px) {
+    *, div1, sum {
+        font-size: 1.8rem;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    .imglink {
+        width: 40%;
+    }
+}
+
+
+/* ----- Mobile ------------ */
+@media (max-width: 580px) {
+    *, div1, sum {
+        font-size: 1.6rem;
+    }
+
+    img {
+        width:60%;
+    }
+ 
+    .imglink {
+        width: 60%;
+    }
+}
