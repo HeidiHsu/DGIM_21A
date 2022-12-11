@@ -1,31 +1,94 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap'); 
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
 }
 
-*, ::before, ::after {              /*psudo elemetn */
-    box-sizing: border-box;
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 75px;
-    font-size: 25px;
+h1 {
+    font-size: 2rem;
 }
 
+h2 {
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+    left:0;
+    padding: 0.5em;
+    background-color: rgb(0, 45, 100);
+    color: beige;
+    top:0;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    padding: 1rem;
+}
+
+.menu-list {
+    float: right;
+    /* padding: 12px; */
+    /* color: white: */
+}
 
 li {
     display: inline;
     margin: 10px;
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 a {
     text-decoration: none;
+    color:beige;
 }
 
+footer {
+    display: flex;
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    background-color: rgb(0, 45, 100);
+    color: beige;
+}
 
+.footer-email {
+    display:flex;
+    padding: 1rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.footer-icons {
+    float:inline-end;
+    padding: 1em;
+    margin-inline-end: 24px;
+}
+
+.fa {
+    background-color: DodgerBlue;
+    border: none;
+    margin: 6px;
+    color: white;
+    padding: 12px;
+    /* font-size: 2rem; */
+    cursor: pointer;
+  }
+
+
+
+/* 
 .mainTitle {
     border-top: 5px solid whitesmoke;
     border-bottom: 5px solid whitesmoke;
@@ -34,21 +97,17 @@ a {
     margin: 5% 20%;
     border-radius: 10px;
     margin-bottom: 5%
-}
+} */
 
-h1 {
-    font-size: 50px;
-}
-
-img {
+/* img {
     display: block;
     margin: auto;
     box-shadow: 5px 5px 5px 5px #777777;
     margin-bottom: 5%;
     width: 600px;
-}
+} */
 
-.list {
+/* .list {
     padding: 20px;
     size: 400px;
     font-weight: 800;
@@ -57,49 +116,220 @@ img {
     margin:auto;
     margin-bottom: 20px;
     background-color: lightgreen;
-}
+} */
 
-li.item {
+/* li.item {
     display: block;
     list-style-type:none;
+} */
+
+
+/* .div1 {
+    float: left;
+    height: 500px;
+    width: 20%;
+    border: 2px solid black;
+    background: #44A1A0;
 }
+
+.div2 {
+    float: left;
+    height: 500px;
+    width: 40%;
+    border: 2px solid black;
+    background: #70566D;
+}
+
+.div3 {
+    float: left;
+    height: 500px;
+    width: 20%;
+    border: 2px solid black;
+    background: #adab13;
+}
+
+.div4 {
+    float: left;
+    height: 500px;
+    width: 20%;
+    border: 2px solid black;
+    background: #56178a;
+} */
+
+/* .contact-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: lightgreen;
+    padding: 30px 50px 40px;
+   }
+
+.contact-headline {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: pink;
+  } */
+
+
+/* Style contact setion inputs */
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e4e4e4;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the contact section */
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    padding: 20px;
+
+  }
+
+  /* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
 
 /* ipad and tablet */
 @media (min-width: 481px) and (max-width: 768px) {
+
+    *, header, footer, li, .div1 .div2 .div3 .div4 {
+        font-size: 1rem;
+    }
+
     h1 {
         font-size: 40px;
         color:pink;
         }
 
-    img {
-        width: 400px;
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
     }
-
-    .list {
+        
+    /* .list {
         padding: 15px;
         size: 350px;
         background-color: pink;
+    } */
+
+    /* .div1 {
+        width: 33.3333%;
+        background: #18360c ;
     }
+
+    .div2 {
+        width: 33.3333%;
+        background: #db6719;
+    }    
+
+    .div3 {
+        width: 33.3333%;
+        background: #7262b6;
+
+    }
+
+    .div4 {
+        width: 100%;
+        background: #43e94ba1;
+    } */
+
+
+footer, header {
+        background: #0d4315 ;    
+    }
+ 
 }
     
 
 /* mobile and smaller*/
 @media (max-width: 480px) {
+    *, header, footer, li, .div1 .div2 .div3 .div4 {
+        font-size: 0.8rem;
+    }
+
     h1 {
         font-size: 25px;
         color: green;
     }
 
-    img {
-        width: 250px;
-    }
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
 
-    .list {
+
+    /* .list {
         padding: 10px;
         size: 275px;
         background-color: lightblue;
+    } */
+
+    .div1 {
+        float: left;
+        width: 100%;
+        background: #44A1A0 ;
+    }
+
+    .div2 {
+        width: 50%;
+        float: left;
+        background: #70566D;
+    }    
+
+    .div3 {
+        float: left;
+        width: 50%;
+        background: #adab13;
+    }
+
+    .div4 {
+        float: left;
+        width: 100%;
+        background: #56178a;
+    }
+
+    footer, header {
+        background: #A33B20 ;
     }
 }
+
+
+
+
 
 h2 {
     font-weight:600;
@@ -107,17 +337,13 @@ h2 {
     text-shadow: 2px 2px 4px hsla(0, 15%, 72%, 0.63);
 }
 
-h2.email {
-    font-weight:200;
-    color:chocolate
-}
 
 a:visited {
     color: lightgray;    
     }
 
 a:hover {
-    color: deeppink;
+    color: yellow;
     text-decoration: underline;
     }
 
@@ -144,3 +370,5 @@ p.about2 {
     background-color: rgb(7, 54, 135);
     color: rgba(225, 224, 196, 0.829);
 }
+
+
