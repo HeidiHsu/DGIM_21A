@@ -97,12 +97,12 @@ footer {
 
 
 .title {
-    padding: 30px;
+    padding: 10px;
     text-align: left;
 } 
 
 .container {
-    display: block;
+    /* display: block; */
     margin-top: 10%;
     border-radius: 5px;
     background-color: white;
@@ -127,6 +127,12 @@ footer {
     padding: 20px;
   }
 
+/* .column2 {
+    float: left;
+    width:67.7;
+    margin-top: 6px;
+    padding: 0 8px;
+} */
 
 /* for side panel or 3 columns layout */
 .column3 {
@@ -165,10 +171,13 @@ footer {
     margin: 8px;
   }
 
-.res_card {
-    box-shadow: 0 4px 8px 3 rgb(209, 232, 224));
-    margin: 1rem;
-    padding: 10px;
+.pro_card {
+    display: flex;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgb(13, 59, 43);
+    /* padding: 3rem; */
+    border-radius: 6px;
+    margin: 20px;
   }
 
 
@@ -274,44 +283,3 @@ footer, header {
         background: #A33B20 ;
     }
 }
-
-
-
-/* 
-
-
-
-a:visited {
-    color: lightgray;    
-    }
-
-a:hover {
-    color: yellow;
-    text-decoration: underline;
-    }
-
-a:focus {
-        border: 2px;
-        border-color: burlywood;
-        border-style: dotted;
-        background-color: antiquewhite;
-    }
-    
-a:active {
-        color: darkcyan;
-        }
-
-
-p.about1 {
-    background-color: yellowgreen;
-    text-color: brown;
-    text-shadow: 2px 2px 4px #000;
-}
-
-
-p.about2 {
-    background-color: rgb(7, 54, 135);
-    color: rgba(225, 224, 196, 0.829);
-}
-
- */
